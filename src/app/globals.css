@@ -1,0 +1,186 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+._main_wraper_container{
+  background: #cee4f9;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+._logo{
+  position: absolute;
+  left: 30px;
+  top: 26px;
+  width: 150px;
+  height: 120px;
+  background: #ffffff;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+._lets_talk{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(0px, -50%);
+}
+._lets_talk ._talbtn{
+  background: #F0F2F5;
+  padding: 16px;
+  border-radius: 100px;
+  border: none;
+  min-width: 134px;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px #888;
+  cursor: pointer;
+ 
+}
+._intero_parent {
+  position: absolute;
+  right: 30px;
+  bottom: 110px;
+  background: #01068D;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+._intero_parent h6{
+  font-size: 20px;
+}
+._intero_parent p{
+  font-size: 13px;
+  margin-top: 6px;
+}
+._main_wraper_container video {
+  width: 100%;
+  height: 98%;
+}
+.session_btn{
+  position: absolute;
+}
+.session_btn , ._loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+._start_session{
+  background: #01068D;
+    color: #fff;
+    padding: 19px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 17px #000235;
+    border-radius: 100px;
+    min-width: 201px;
+    border: 3px solid #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
+._loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #040aa6, -20px 0 #9da0ff;background: #040aa6 }
+    33% {box-shadow: 20px 0 #040aa6, -20px 0 #9da0ff;background: #9da0ff}
+    66% {box-shadow: 20px 0 #9da0ff,-20px 0 #040aa6; background: #9da0ff}
+    100%{box-shadow: 20px 0 #9da0ff,-20px 0 #040aa6; background: #040aa6 }
+}
+@media (max-width:991px) {
+  ._main_wraper_container{
+    width: 100%;
+    height: 100%;
+    background: #9ccaf5;
+  }
+}
+@media (max-width:768px) {
+._logo{
+  width: 140px;
+    height: 68px;
+}
+._logo img {
+  width: 100px;
+}
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+._lets_talk .talbtn{
+  background: hsl(0, 69%, 49%);
+  padding: 16px;
+  border-radius: 100px;
+  border: none;
+  min-width: 134px;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px #1a1919;
+  cursor: pointer;
+  color: white;
+ 
+}
+
+
+._lets_talk .talbtn1{
+  background-color: gray;
+  padding: 16px;
+  border-radius: 100px;
+  border: none;
+  min-width: 134px;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px #1a1919;
+  cursor: pointer;
+  color: white;
+  cursor: not-allowed;
+ 
+}
